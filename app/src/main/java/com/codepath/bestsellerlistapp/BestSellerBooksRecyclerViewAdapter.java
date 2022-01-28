@@ -3,6 +3,7 @@ package com.codepath.bestsellerlistapp;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -59,6 +60,8 @@ public class BestSellerBooksRecyclerViewAdapter extends RecyclerView.Adapter<Bes
         public final View mView;
         public final TextView mBookTitle;
         public final TextView mBookAuthor;
+        public final TextView mDescription;
+        public final ImageView mBookImage;
         public BestSellerBook mItem;
 
         public BookViewHolder(View view) {
@@ -66,6 +69,8 @@ public class BestSellerBooksRecyclerViewAdapter extends RecyclerView.Adapter<Bes
             mView = view;
             mBookTitle = (TextView) view.findViewById(R.id.book_title);
             mBookAuthor = (TextView) view.findViewById(R.id.book_author);
+            mDescription = (TextView) view.findViewById(R.id.book_description);
+            mBookImage = (ImageView) view.findViewById(R.id.book_image);
         }
 
         @Override
